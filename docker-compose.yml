@@ -1,0 +1,17 @@
+version: '3.2'
+# We need it in order to enable extarnal DNS resolution.
+# For more details, see: https://github.com/docker/docker/issues/27399#issuecomment-256928125
+networks:
+  default:
+    ipam:
+      config:
+       - subnet: 192.168.1.0/24
+services:
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+     - ./:/src-code
+    ports:
+     - 80:80
