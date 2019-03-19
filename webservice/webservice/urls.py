@@ -20,5 +20,5 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello_world', views.MessageClassifier.as_view())
+    path('classify', views.MessageClassifier.as_view())
 ]
