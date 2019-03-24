@@ -1,5 +1,9 @@
 # Offensive Message Text Classifier API
 
+## Model
+
+See the jupyter [notebook](model/model.ipynb).
+
 ## API Description
 
 This docker container exposes an API that allows to detect an offensive message.
